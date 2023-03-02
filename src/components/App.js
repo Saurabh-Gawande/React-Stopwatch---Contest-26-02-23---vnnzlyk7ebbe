@@ -13,7 +13,7 @@ const App = () => {
         return newTime;
       })
     }, 10)
-    // console.log(startTime.current)
+
   }
 
   function stop(){
@@ -23,7 +23,7 @@ const App = () => {
   function lap(){
     const laptime = currentTime;
     setLaps(prev => [...prev, laptime]);
-    // console.log(laps)
+    
   
   }
 
