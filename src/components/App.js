@@ -44,16 +44,16 @@ const App = () => {
           <button className="reset-btn" onClick={reset}>RESET</button>
         </section>
       </section>
-      <section className='lap-section'>
-        <h2>Laps</h2>
-        <section className='laps'>
-          {laps.length==0 ? "":
-           laps.map((ele, index)=>{
-            return  <p key={index}>{ele}</p>
-            })
-          }
+      {laps.length > 0 && (
+        <section className='lap-section'>
+          <h2>Laps</h2>
+          <section className='laps'>
+            {laps.map((ele, index)=>{
+              return  <p key={index}>{ele}</p>
+            })}
+          </section>
         </section>
-      </section>
+      )}
     </div>
   )
 }
